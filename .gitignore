@@ -1,0 +1,74 @@
+# Dependencies
+node_modules/
+
+# pnpm
+.pnpm-store/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+*.pem
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+*.tsbuildinfo
+
+# Backend (NestJS)
+apps/*/dist/
+
+# Frontend (Vite)
+*.local
+
+# Prisma
+prisma/*.db
+prisma/*.db-journal
+
+# Logs & runtime
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.nyc_output/
+**/playwright-report/
+**/test-results/
+**/playwright/.cache/
+**/blob-report/
+**/.vitest/
+
+# IDE & editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*.swo
+*~
+
+# Cursor
+.cursor/cache/
+.cursor/projects/
+.cursor/tutor/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker & MinIO (local data)
+minio-data/
+*.localstack
+
+# Misc
+*.tgz
+.cache/
+tmp/
+temp/
+.turbo/
